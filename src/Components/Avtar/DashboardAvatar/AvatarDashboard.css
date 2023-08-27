@@ -1,0 +1,174 @@
+.builder {
+  position: relative;
+  width: 65vw;
+  height: 85vh;
+  border-radius: 20px;
+  background: #FFF;
+  overflow: scroll;
+}
+
+.layout-avatar {
+
+  padding: 20px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.avatar-side-nav {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  width: 70px;
+  overflow-x: hidden;
+  border-right: 1px solid whitesmoke;
+}
+
+.avatar-side-nav ul {
+  padding: 9px;
+}
+
+.avatar-side-nav ul:first-child {
+  padding: 20px;
+}
+
+/* Scroll Ccss */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 9px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #EDEDE9;
+  border-radius: 10px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #EDEDE9;
+}
+
+
+.side-nav-hr {
+  stroke-width: 1px;
+  stroke: #000;
+  opacity: 0.1;
+  width: 70px;
+  margin: 0;
+}
+
+.nav-left-items {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-left-items button {
+  width: 87.967px;
+  height: 24px;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid #000;
+  opacity: 0.3;
+
+}
+
+.nav-left-items button:first-child {
+  background: #389FFE;
+  opacity: 1;
+  border: none;
+}
+
+.builder-top-nav {
+  box-sizing: border-box;
+  display: flex;
+  width: 92%;
+  justify-content: space-between;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 17px;
+  position: absolute;
+  border-bottom: 1px solid whitesmoke;
+  top: 0;
+  padding: 16px 17px 17px 29px;
+  right: 0;
+}
+
+.nav-right-items {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  align-items: center;
+}
+
+/* Switch Button CSS */
+
+
+.switch-checkbox {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+.switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 55px;
+  height: 23px;
+  background: grey;
+  border-radius: 100px;
+  position: relative;
+  transition: background-color .2s;
+}
+
+.switch-label .switch-button {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 17px;
+  height: 18px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+
+.switch-checkbox:checked+.switch-label .switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.switch-label:active .switch-button {
+  width: 60px;
+}
+
+/* Avatar Box Layout */
+.avatar-box {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  gap: 18px;
+  align-items: center;
+  top: 82px;
+  left: 89px;
+  /* justify-content: start; */
+}
+
+.avatar-closed {
+  display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    border-radius: 20px;
+    height: 230px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
