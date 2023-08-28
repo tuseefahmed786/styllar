@@ -2,6 +2,8 @@ import React from 'react'
 import "./AvatarDashboard.css"
 import SelectAvatar from '../SelectAvatar/SelectAvatar'
 import closedavatar from "./Assests/Group 1.png"
+import Stlavar from "./Assests/Styllar ItemsMAGIC-BALLS-736 copy 1.png"
+import IronIcon from "./Assests/Vector 243.png"
 
 const Switch = ({ isOn, handleToggle, colorOne, colorTwo }) => {
   return (
@@ -278,49 +280,18 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
 
 <div className='avatar-box'>
 
-<div className='avatar-closed'>
+<div className='avatar-box-layout'>
 <img src={closedavatar} alt="" />
 </div>
 
-<div className='avatar-closed'>
-<img src={closedavatar} alt="" />
+<div className='avatar-box-layout stalker-box'>
+  <span className='iron-icon'>
+    <img src={IronIcon} alt=""/>
+  </span>
+<div className='stalker-img'><img src={Stlavar} alt="" /></div>
 </div>
 
-<div className='avatar-closed'>
-<img src={closedavatar} alt="" />
-</div>
-<div className='avatar-closed'>
-<img src={closedavatar} alt="" />
-</div>
 
-<div className='avatar-closed'>
-<img src={closedavatar} alt="" />
-</div>
-
-<div className='avatar-closed'>
-<img src={closedavatar} alt="" />
-</div>
-
-<div className='avatar-closed'>
-<img src={closedavatar} alt="" />
-</div>
-<div className='avatar-closed'>
-<img src={closedavatar} alt="" />
-</div>
-<div className='avatar-closed'>
-<img src={closedavatar} alt="" />
-</div>
-
-<div className='avatar-closed'>
-<img src={closedavatar} alt="" />
-</div>
-
-<div className='avatar-closed'>
-<img src={closedavatar} alt="" />
-</div>
-<div className='avatar-closed'>
-<img src={closedavatar} alt="" />
-</div>
 </div>
 
 

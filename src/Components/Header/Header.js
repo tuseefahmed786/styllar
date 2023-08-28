@@ -1,4 +1,5 @@
 import React from 'react'
+import BurgerIcon from "./Assests/Group 1690.png"
 import "./header.css"
 function Header(props) {
     return (
@@ -36,10 +37,12 @@ function Header(props) {
                         </div>
 
                         <div className='user-email'>
+                       <p>tmkpd...958</p>
+                           
                             {/* <p>{props.usermail}</p> */}
                             <p>Terra53k5900tmkpd...9589204</p>
                         </div>
-
+                        git push origin master
                         <div className='email-scroll-icon'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
                                 <path d="M15.1414 0.478294L8.07031 7.54936L0.999245 0.478294" stroke="black" />
@@ -48,20 +51,25 @@ function Header(props) {
                     </div>
                 </div>
 
-<div className='nav-menu'>
-<div className='menu-items'>
-<div className='menu-text'>
-    <p className='deafult-text clr-w'>MENU</p>
-</div>
+                <div className='nav-menu'>
+                    <div className='menu-items'>
+                        <div className='menu-text'>
+                            <p className='deafult-text clr-w'>MENU</p>
+                        </div>
 
-<div className='menu-icon'>
-<svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
-  <circle cx="13.5" cy="14.4072" r="13" stroke="white"/>
-  <circle cx="13.5" cy="14.4072" r="6.75" fill="white"/>
-</svg>
+                        <div className='menu-icon'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                                <circle cx="13.5" cy="14.4072" r="13" stroke="white" />
+                                <circle cx="13.5" cy="14.4072" r="6.75" fill="white" />
+                            </svg>
+                        </div>
+
+<div className='burger-icon'>
+    <img src={BurgerIcon} alt="" />
 </div>
-</div>
-</div>
+                        
+                    </div>
+                </div>
             </nav>
         </>
 

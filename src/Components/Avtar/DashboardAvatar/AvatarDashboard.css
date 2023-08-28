@@ -163,7 +163,7 @@
   /* justify-content: start; */
 }
 
-.avatar-closed {
+.avatar-box-layout {
   display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -171,4 +171,147 @@
     border-radius: 20px;
     height: 230px;
     border: 1px solid rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.stalker-img img{
+width: 100%;
+}
+
+.iron-icon{
+width: 26px;
+height: 26px;
+position: absolute;
+top: 14px;
+right: 12px;
+background: rgba(206, 255, 0, 1);
+border-radius: 12px;
+}
+
+.iron-icon img {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+.burger-icon{
+  display: none;
+}
+
+.user-email p:first-child{
+  display:none;
+}
+/* media query */
+
+@media screen and (max-width: 825px) {
+  .layout-avatar{
+      flex-direction: column;
+  }
+
+  .builder, .create-avatar{
+    width: initial!important;
+   height: initial!important;
+  }
+}
+
+@media screen and (max-width: 626px) {
+  .menu-text{
+display: none!important;
+  }
+  .builder-top-nav{
+    right: -35px;
+  }
+  .menu-icon{
+    display: none;
+  }
+
+  .burger-icon{
+    display: block;
+  }
+  .nav-menu{
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+.user-email p:first-child{
+  display: block;
+}
+
+.user-email p:last-child{
+  display: none!important;
+}
+
+.nav-user{
+  width: 160px;
+}
+}
+@media screen and (max-width: 525px) {
+
+  .builder{
+    overflow-y:hidden;
+    height: fit-content!important;
+  }
+.avatar-side-nav {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: unset;
+  width: 500px;
+  overflow: scroll;
+  height: auto;
+  border-right: 1px solid whitesmoke;
+}
+
+.builder-top-nav {
+overflow: scroll;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: static;
+width: 100%;
+}
+.builder-top-nav::-webkit-scrollbar{
+ 
+    width: 5px;
+    height: 5px;
+ 
+}
+.avatar-box {
+  display: inline-flex;
+  gap: 17px;
+  margin-left: 13px;
+  position: static;
+  margin-top: 12px;
+  flex-wrap: nowrap;
+}
+
+.avatar-side-nav::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.nav-right-items{
+  margin-left: 12px;
+}
+
+
+}
+
+@media screen and (max-width: 380px) {
+.user-email ,.user-ellispe-icon{
+  display: none!important;
+}
+.nav-user{
+  width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-box-layout {
+  width: 180px;
+  height: 180px;
+ 
+}
+
 }

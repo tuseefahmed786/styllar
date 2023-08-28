@@ -3,4 +3,46 @@
     border-radius: 20px;
     background: #FFF;
 width: 35vw;
+overflow: scroll;
+height: 85vh;
+display: flex;
+flex-direction: column;
 }
+
+.avatarpic-section{
+    background-color: whitesmoke;
+    width: 85%;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 13px;
+
+}
+
+.avatarpic-section img{
+width: 100%;
+}
+
+
+.avatar-content {
+    max-width: 175px;
+    margin: auto;
+    text-align: center;
+    color: black;
+    opacity: 40%;
+}
+
+.avatar-button {
+text-align: center;
+
+}
+.avatar-button button {
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    background: rgba(56, 159, 254, 1);
+    padding: 12px 42px 12px 42px;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+  
