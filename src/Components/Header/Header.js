@@ -42,7 +42,7 @@ function Header(props) {
                             {/* <p>{props.usermail}</p> */}
                             <p>Terra53k5900tmkpd...9589204</p>
                         </div>
-                        git push origin master
+                     
                         <div className='email-scroll-icon'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
                                 <path d="M15.1414 0.478294L8.07031 7.54936L0.999245 0.478294" stroke="black" />
