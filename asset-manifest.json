@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/styllar/static/css/main.c7be4de7.css",
+    "main.js": "/styllar/static/js/main.71db2ebb.js",
+    "static/js/787.ea099fba.chunk.js": "/styllar/static/js/787.ea099fba.chunk.js",
+    "static/media/ALSANREG.woff": "/styllar/static/media/ALSANREG.0099ffa45de5e9cfaf91.woff",
+    "static/media/ALSANBOL.woff": "/styllar/static/media/ALSANBOL.9abaea4dbd92bd0a22c4.woff",
+    "static/media/ALSANLIG.woff": "/styllar/static/media/ALSANLIG.638de03f3b905eb73a4b.woff",
+    "static/media/Styllar ItemsMAGIC-BALLS-736 copy 1.png": "/styllar/static/media/Styllar ItemsMAGIC-BALLS-736 copy 1.f4a42a4b48fdaa12a4c9.png",
+    "index.html": "/styllar/index.html",
+    "main.c7be4de7.css.map": "/styllar/static/css/main.c7be4de7.css.map",
+    "main.71db2ebb.js.map": "/styllar/static/js/main.71db2ebb.js.map",
+    "787.ea099fba.chunk.js.map": "/styllar/static/js/787.ea099fba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7be4de7.css",
+    "static/js/main.71db2ebb.js"
+  ]
+}
