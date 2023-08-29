@@ -11,8 +11,8 @@ function SelectAvatar() {
     </div>
 
     <div className='avatar-content'>
-      <p>No Avatar Selected.
-Please select the avatar
+      <p>No Avatar Selected.<br/>
+Please select the avatar<br/>
 you wish to upgrade</p>
     </div>
 

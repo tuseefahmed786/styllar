@@ -2,20 +2,20 @@
 .create-avatar{
     border-radius: 20px;
     background: #FFF;
-width: 35vw;
+width: 26vw;
 overflow: scroll;
 height: 85vh;
 display: flex;
+justify-content: space-around;
+align-items: center;
 flex-direction: column;
 }
 
-.avatarpic-section{
+.avatarpic-section {
     background-color: whitesmoke;
-    width: 85%;
-    margin: auto;
-    margin-top: 35px;
+    width: 82%;
+    margin-top: 19px;
     border-radius: 13px;
-
 }
 
 .avatarpic-section img{
@@ -24,24 +24,29 @@ width: 100%;
 
 
 .avatar-content {
-    max-width: 175px;
-    margin: auto;
     text-align: center;
-    color: black;
-    opacity: 40%;
+    color: #999;
 }
 
 .avatar-button {
+    width: 100%;
 text-align: center;
 
 }
 .avatar-button button {
     width: 80%;
     border: none;
+    font-family: inherit;
+    font-size: 14px;
+    text-transform: uppercase;
     border-radius: 20px;
     background: rgba(56, 159, 254, 1);
     padding: 12px 42px 12px 42px;
     color: rgba(255, 255, 255, 1);
+}
+
+.avatar-content p{
+font-size: 18px;
 }
 
 
