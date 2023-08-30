@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/styllar/static/css/main.5ee79ef1.css",
+    "main.css": "/styllar/static/css/main.bf44330b.css",
     "main.js": "/styllar/static/js/main.ed6a94f6.js",
     "static/js/787.ea099fba.chunk.js": "/styllar/static/js/787.ea099fba.chunk.js",
     "static/media/ESAllianzBold.otf": "/styllar/static/media/ESAllianzBold.9ffaba12556c694cac0b.otf",
@@ -20,12 +20,12 @@
     "static/media/Styllar ItemsMAGIC-BALLS-736 cop.png": "/styllar/static/media/Styllar ItemsMAGIC-BALLS-736 cop.0565fd04be42e99e52f7.png",
     "static/media/Styllar ItemsMAGIC-BALLS-736 copy 1.png": "/styllar/static/media/Styllar ItemsMAGIC-BALLS-736 copy 1.8b02fa2f63d75154541d.png",
     "index.html": "/styllar/index.html",
-    "main.5ee79ef1.css.map": "/styllar/static/css/main.5ee79ef1.css.map",
+    "main.bf44330b.css.map": "/styllar/static/css/main.bf44330b.css.map",
     "main.ed6a94f6.js.map": "/styllar/static/js/main.ed6a94f6.js.map",
     "787.ea099fba.chunk.js.map": "/styllar/static/js/787.ea099fba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ee79ef1.css",
+    "static/css/main.bf44330b.css",
     "static/js/main.ed6a94f6.js"
   ]
 }
