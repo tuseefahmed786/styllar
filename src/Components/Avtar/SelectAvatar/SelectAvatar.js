@@ -1,9 +1,21 @@
 import React from 'react'
-import AvatarImg from "../DashboardAvatar/Assests/Styllar ItemsMAGIC-BALLS-736 copy 1.png"
+import { useContext } from 'react';
+import { MyContext } from '../../../MyContext';
+import AvatarImg from "../DashboardAvatar/Assests/Styllar ItemsMAGIC-BALLS-736 cop.png"
 import "./SelectAvatar.css"
+import SideSelectAvatar from './SideSelectAvatar'
 function SelectAvatar() {
+
+const {  setfirst } = useContext(MyContext);
+function showSideAvtar() {
+  setfirst(true)
+}
   return (
     <div className='create-avatar'>
+{/* {first?console.log(false):<SideSelectAvatar/>}
+ */}
+
+
     <div className='avatarpic-section'>
       
         <img src={AvatarImg} alt="" />
@@ -17,7 +29,7 @@ you wish to upgrade</p>
     </div>
 
     <div className='avatar-button'>
-      <button>Select your Avatar</button>
+      <button onClick={showSideAvtar}>Select your Avatar</button>
     </div>
     </div>
   )

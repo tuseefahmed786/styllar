@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./AvatarDashboard.css"
 import SelectAvatar from '../SelectAvatar/SelectAvatar'
-import closedavatar from "./Assests/Group 1.png"
-import Stlavar from "./Assests/Styllar ItemsMAGIC-BALLS-736 copy 1.png"
-import IronIcon from "./Assests/Vector 243.png"
+import AvatarBoxAllItems from './AvatarBoxAllItems';
+import Myitems from './Myitems';
+
 
 const Switch = ({ isOn, handleToggle, colorOne, colorTwo }) => {
   return (
@@ -29,6 +29,14 @@ const Switch = ({ isOn, handleToggle, colorOne, colorTwo }) => {
 function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
 
   const [checked, setChecked] = React.useState(true);
+const [first, setfirst] = useState(true)
+function   myitems() {
+  setfirst(false)
+}
+function   allitems() {
+  setfirst(true)
+}
+
   return (
     <>
       <div className='layout-avatar'>
@@ -37,7 +45,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
           <div className='avatar-side-nav'>
 
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="13" viewBox="0 0 20 13" fill="none">
                 <path d="M20 6.42857L10.3571 11.9959L10.3571 0.861265L20 6.42857Z" fill="black" />
                 <path d="M12.8572 6.42857L3.21432 11.9959L3.21432 0.861265L12.8572 6.42857Z" fill="black" />
               </svg></li>
@@ -45,7 +53,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
             </ul>
             <hr className='side-nav-hr' />
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg"  width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M14.8242 37.6924C14.8242 37.6924 14.3633 40.5238 18.5117 39.5361" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M29.2901 37.6924C29.2901 37.6924 29.7509 40.5238 25.6025 39.5361" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M42.8874 22.1121C42.9496 10.5763 33.6484 1.17438 22.1126 1.11219C10.5768 1.05001 1.17478 10.3511 1.11259 21.8869C1.05041 33.4227 10.3516 42.8248 21.8874 42.887C33.4232 42.9492 42.8252 33.6479 42.8874 22.1121Z" stroke="black" stroke-width="0.75" stroke-linecap="round" />
@@ -61,7 +69,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
             <hr className='side-nav-hr' />
 
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg" className="svg-css" width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M19.7471 14.6691C19.7439 14.5111 19.6997 14.3567 19.6187 14.221C19.5377 14.0853 19.4229 13.973 19.2854 13.8951C19.1429 13.8189 18.9904 13.7631 18.8323 13.7294C17.7781 13.4811 16.7386 13.1738 15.7187 12.809C15.293 12.6583 14.8536 12.5491 14.4068 12.4831C13.6977 12.3397 12.9627 12.3927 12.2815 12.6363C11.6003 12.8799 10.9986 13.3048 10.5411 13.8653C10.3465 14.0629 10.1948 14.2986 10.0957 14.5576C10.0634 14.6785 10.0628 14.8058 10.0939 14.927C10.1249 15.0483 10.1866 15.1595 10.273 15.2501C10.3012 15.2799 10.3318 15.3073 10.3647 15.3319C10.4957 15.4248 10.6532 15.4731 10.8137 15.4697C10.9743 15.4663 11.1294 15.4114 11.2564 15.3131C11.5376 15.0755 11.857 14.8871 12.2009 14.7558C12.5839 14.6408 12.9852 14.5986 13.3837 14.6313C13.8511 14.6653 14.3147 14.7378 14.77 14.8482C15.7275 15.0712 16.6923 15.2553 17.6607 15.4357C17.9758 15.4993 18.2945 15.5437 18.615 15.5687C18.8755 15.5968 19.1378 15.5391 19.3625 15.4042C19.4716 15.3276 19.5626 15.2278 19.6287 15.112C19.6947 14.9961 19.7343 14.8671 19.7446 14.7341C19.7463 14.7125 19.7471 14.6908 19.7471 14.6691Z" fill="black" />
                 <path d="M24.2527 14.6691C24.256 14.5111 24.3003 14.3567 24.3813 14.221C24.4623 14.0853 24.5772 13.973 24.7147 13.8951C24.8571 13.8189 25.0096 13.7631 25.1677 13.7294C26.2219 13.4811 27.2615 13.1738 28.2813 12.809C28.7071 12.6583 29.1464 12.5491 29.5932 12.4831C30.3024 12.3397 31.0371 12.3927 31.7183 12.6363C32.3995 12.8799 33.0015 13.3048 33.4589 13.8653C33.6535 14.0629 33.805 14.2986 33.9041 14.5576C33.9364 14.6785 33.9372 14.8058 33.9061 14.927C33.8751 15.0483 33.8134 15.1595 33.727 15.2501C33.6988 15.2799 33.668 15.3073 33.6352 15.3319C33.5042 15.4248 33.3469 15.4731 33.1863 15.4697C33.0257 15.4663 32.8704 15.4114 32.7434 15.3131C32.4622 15.0755 32.1431 14.8871 31.7991 14.7558C31.4161 14.6408 31.0149 14.5986 30.6163 14.6313C30.149 14.6653 29.6851 14.7378 29.2298 14.8482C28.2723 15.0712 27.3075 15.2553 26.3391 15.4357C26.024 15.4993 25.7055 15.5437 25.385 15.5687C25.1246 15.5968 24.862 15.5391 24.6373 15.4042C24.5282 15.3276 24.4374 15.2278 24.3713 15.112C24.3053 14.9961 24.2655 14.8671 24.2552 14.7341C24.2535 14.7125 24.2527 14.6908 24.2527 14.6691Z" fill="black" />
                 <path d="M13.5796 18.299C13.5793 18.4997 13.6186 18.6986 13.6953 18.8841C13.7721 19.0696 13.8846 19.2381 14.0266 19.3801C14.1686 19.522 14.3373 19.6345 14.5228 19.7111C14.7084 19.7876 14.9073 19.8268 15.108 19.8264C15.5131 19.8261 15.9015 19.6651 16.188 19.3787C16.4746 19.0924 16.6357 18.7041 16.6363 18.299C16.6358 17.8937 16.4747 17.5051 16.1882 17.2184C15.9018 16.9317 15.5133 16.7703 15.108 16.7695C14.9072 16.7693 14.7082 16.8087 14.5226 16.8855C14.337 16.9623 14.1684 17.075 14.0264 17.2171C13.8844 17.3592 13.7718 17.5279 13.6951 17.7135C13.6185 17.8992 13.5792 18.0981 13.5796 18.299Z" fill="black" />
@@ -80,7 +88,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
             <hr className='side-nav-hr' />
 
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg" className="svg-css" width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M22 43C33.598 43 43 33.598 43 22C43 10.402 33.598 1 22 1C10.402 1 1 10.402 1 22C1 33.598 10.402 43 22 43Z" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M18.4725 9.49391C16.0871 10.2512 13.9469 11.6309 12.2723 13.4908C5.85586 20.238 10.3095 33.2747 10.3095 33.2747L9.64219 27.3858C10.5598 26.5641 11.2379 25.5093 11.6043 24.3333C11.9708 23.1574 12.0122 21.9041 11.7238 20.7065C10.7196 16.542 18.7706 22.5191 22.0026 22.5191C25.2346 22.5191 33.2858 16.542 32.2816 20.7065C31.9932 21.9041 32.0346 23.1574 32.4011 24.3333C32.7676 25.5093 33.4456 26.5641 34.3632 27.3858L33.6693 33.2702C33.6693 33.2702 38.1569 20.2291 31.7406 13.4818C29.695 11.3309 26.6258 8.9961 22.0072 8.9961C21.4122 8.9954 20.818 9.03575 20.2285 9.11684" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M16.4845 20.5522C16.4845 20.5522 13.9336 19.0339 15.3305 14.8026C16.2958 15.3025 17.2973 15.7288 18.3267 16.0781C18.3267 16.0781 15.4435 11.3334 20.0476 8.32422C20.0476 8.32422 20.2396 12.5537 23.7728 13.3045C24.1975 11.9665 25.0073 10.7834 26.1009 9.90332C26.1009 9.90332 30.8922 12.3834 29.4211 16.8879" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
@@ -90,7 +98,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
             <hr className='side-nav-hr' />
 
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg" className="svg-css" width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M21.9983 9.20703C23.5272 9.27116 25.0442 9.50369 26.5221 9.90039C30.1174 11.0861 32.0044 14.5357 32.9078 16.922C33.1832 17.6688 33.5718 18.3688 34.0603 18.9973L34.4628 19.5062L30.669 20.9935" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M22.0018 9.20703C20.4729 9.27116 18.9558 9.50369 17.4779 9.90039C13.8827 11.0861 11.9959 14.5357 11.0925 16.922C10.8171 17.6688 10.4282 18.3688 9.9398 18.9973L9.53748 19.5062L13.3311 20.9935" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M13.6385 19.4385C13.6385 19.4385 13.1057 22.711 17.9003 21.5694" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
@@ -103,7 +111,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
             <hr className='side-nav-hr' />
 
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg" className="svg-css" width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M14.1658 15.9795C13.493 18.7067 13.5863 21.5508 12.9302 24.2607C12.9302 24.2607 11.4202 29.2309 13.3665 32.3358C13.4415 32.4586 13.5091 32.5858 13.5691 32.7165C15.3321 33.6836 18.4548 34.325 21.9762 34.325C25.5276 34.325 28.6735 33.6727 30.4281 32.6917C30.6221 32.4323 30.7919 32.1554 30.935 31.8647C32.4735 28.7538 31.1086 24.2607 31.1086 24.2607C30.4524 21.5509 30.5458 18.7067 29.8729 15.9795" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M26.108 11.583C26.108 10.4417 24.27 9.51562 22.0042 9.51562C19.7383 9.51562 17.9001 10.4417 17.9001 11.583C17.9001 12.1086 18.7708 12.8628 19.71 13.5235C20.382 13.9951 21.1832 14.2482 22.0042 14.2482C22.8252 14.2482 23.6262 13.9951 24.2981 13.5235C25.2374 12.8628 26.108 12.1086 26.108 11.583Z" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M21.8735 7.51661C20.3406 7.51527 18.8314 7.89556 17.4822 8.62317C16.1329 9.35078 14.9861 10.4028 14.145 11.6844L16.6233 12.22" stroke="black" stroke-width="0.75" stroke-linecap="round" />
@@ -130,7 +138,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
 
 
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg" className="svg-css" width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M17.9408 18.5596C19.2066 19.2967 20.6488 19.676 22.1134 19.657C23.5781 19.676 25.0203 19.2967 26.2861 18.5596" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M17.8684 18.5596C19.1342 19.2967 20.5766 19.676 22.0413 19.657C23.5059 19.676 24.9481 19.2967 26.2139 18.5596" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M19.6676 15.8496C19.6676 15.8496 19.5459 18.2536 21.1587 19.7142" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
@@ -147,7 +155,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
 
 
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg" className="svg-css" width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M22.9193 11.1016C22.8341 12.1527 25.2242 12.9342 28.2209 13.0375C31.2175 13.1408 33.7398 12.3646 33.825 11.3135" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M33.8628 11.3164C33.8225 12.3798 33.6944 13.4381 33.48 14.4805C33.4071 14.7627 33.4137 15.0595 33.4993 15.3382C33.6674 15.8391 33.9284 17.0497 34.0261 19.8563" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M22.9597 11.0977C22.9397 12.6508 22.9184 14.1905 22.9184 14.1963C22.9138 15.0044 21.9982 15.7316 21.4154 16.0874L21.1849 16.2917" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
@@ -162,7 +170,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
             <hr className='side-nav-hr' />
 
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg" className="svg-css" width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M12.5397 27.5043C11.2083 27.7157 9.63026 26.9006 8.67714 25.3904C7.50407 23.5316 7.72168 21.3236 9.16321 20.4587C10.1117 19.8896 11.3541 20.0438 12.4269 20.7454" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M31.5983 27.5347C32.9056 27.7417 34.4441 26.9194 35.3628 25.4029C36.4935 23.5363 36.2573 21.3249 34.8353 20.4635C33.8921 19.8922 32.6639 20.0583 31.6139 20.7798" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M21.4091 8.62891H22.6033C23.7732 8.62891 24.9316 8.85934 26.0125 9.30704C27.0933 9.75474 28.0755 10.411 28.9027 11.2382C29.73 12.0655 30.3862 13.0475 30.8339 14.1284C31.2816 15.2093 31.512 16.3677 31.512 17.5376V26.4614C31.512 27.6313 31.2816 28.7898 30.8339 29.8707C30.3862 30.9515 29.7299 31.9336 28.9027 32.7608C28.0754 33.5881 27.0933 34.2443 26.0125 34.692C24.9316 35.1397 23.7732 35.3701 22.6033 35.3701H21.4091C19.0463 35.3701 16.7804 34.4315 15.1097 32.7608C13.439 31.0901 12.5004 28.8242 12.5004 26.4614V17.5376C12.5004 15.1749 13.439 12.9089 15.1097 11.2382C16.7804 9.5675 19.0463 8.62891 21.4091 8.62891V8.62891Z" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
@@ -179,7 +187,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
 
 
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg" className="svg-css" width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M1.58716 18.3486C2.50049 18.3492 3.38822 18.6506 4.11311 19.2062C4.83799 19.7618 5.35968 20.5408 5.5975 21.4226C5.73238 21.4037 5.86821 21.3938 6.0044 21.3928C6.82467 21.3928 7.61137 21.7186 8.1914 22.2986C8.77143 22.8786 9.09723 23.6653 9.09725 24.4856C9.09723 25.3059 8.77143 26.0925 8.1914 26.6725C7.61137 27.2526 6.82467 27.5784 6.0044 27.5784H2.6337" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M6.62305 36.2051H37.3764" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M10.6372 39.6631H33.3627" stroke="black" stroke-width="0.75" stroke-linecap="round" />
@@ -195,7 +203,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
             <hr className='side-nav-hr' />
 
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg" className="svg-css" width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M30.0813 23.287C29.3743 22.5474 28.5611 21.9174 27.6685 21.4175C28.7143 20.1255 29.284 18.5132 29.2823 16.8511C29.2822 15.8948 29.0938 14.9478 28.7278 14.0643C28.3618 13.1808 27.8253 12.3781 27.1491 11.7019C26.4728 11.0257 25.67 10.4894 24.7865 10.1235C23.9029 9.75758 22.9559 9.56927 21.9996 9.56934C20.0683 9.56932 18.2162 10.3365 16.8505 11.7021C15.4848 13.0677 14.7175 14.9199 14.7174 16.8512C14.7158 18.5134 15.2856 20.1256 16.3315 21.4175C15.4806 21.8942 14.7016 22.4891 14.0176 23.1843" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M11.6096 30.4814C12.3806 34.2971 16.739 34.4309 22.0001 34.4309C27.2564 34.4309 31.6116 34.2974 32.3884 30.4919" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M13.9898 27.217C13.3386 29.243 12.444 30.7543 11.4668 30.4563C10.5021 30.1661 9.82086 28.1822 10.4722 26.1561C11.1102 24.1251 12.825 22.8607 13.7879 23.1559C14.7664 23.4492 14.628 25.1874 13.9898 27.217Z" stroke="black" stroke-width="0.75" stroke-linecap="round" />
@@ -209,7 +217,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
             </ul>
             <hr className='side-nav-hr' />
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg" className="svg-css" width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M34.809 22.2268C34.8089 18.8297 33.4593 15.5718 31.0572 13.1697C28.6551 10.7676 25.3972 9.41802 22.0001 9.41797C18.603 9.41801 15.345 10.7675 12.9428 13.1696C10.5407 15.5717 9.19106 18.8297 9.19092 22.2268C9.19099 25.624 10.5406 28.882 12.9427 31.2842C15.3449 33.6864 18.6029 35.0359 22.0001 35.036C25.3972 35.0359 28.6552 33.6863 31.0573 31.2841C33.4595 28.882 34.809 25.624 34.809 22.2268Z" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M22.0001 15.7597C24.1069 15.7597 25.8149 15.0536 25.8149 14.1826C25.8149 13.3116 24.1069 12.6055 22.0001 12.6055C19.8932 12.6055 18.1853 13.3116 18.1853 14.1826C18.1853 15.0536 19.8932 15.7597 22.0001 15.7597Z" fill="black" />
                 <path d="M22 43C33.598 43 43 33.598 43 22C43 10.402 33.598 1 22 1C10.402 1 1 10.402 1 22C1 33.598 10.402 43 22 43Z" stroke="black" stroke-width="0.75" stroke-linecap="round" />
@@ -218,7 +226,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
             <hr className='side-nav-hr' />
 
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg" className="svg-css" width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M28.0439 23.5541C30.0224 15.8593 28.9203 8.92573 25.5824 8.0675C22.2445 7.20928 17.9348 12.7514 15.9563 20.4462C13.9779 28.141 15.0799 35.0746 18.4178 35.9329C21.7557 36.7911 26.0655 31.2489 28.0439 23.5541Z" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M28.0438 23.5537C29.7862 16.7768 29.012 10.7208 26.3144 10.0272C23.6169 9.3336 20.0175 14.2651 18.2751 21.042C16.5326 27.8188 17.3069 33.8748 20.0044 34.5683C22.702 35.2619 26.3013 30.3305 28.0438 23.5537Z" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M28.0637 23.4163C28.8034 20.5393 28.8621 18.0679 28.1945 17.8963C27.527 17.7246 26.3862 19.9177 25.6464 22.7947C24.9066 25.6717 24.848 28.1431 25.5155 28.3147C26.183 28.4863 27.3239 26.2932 28.0637 23.4163Z" stroke="black" stroke-width="0.75" stroke-linecap="round" />
@@ -229,7 +237,7 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
 
 
             <ul>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <li><svg xmlns="http://www.w3.org/2000/svg" className="svg-css" width="44" height="44" viewBox="0 0 44 44" fill="none">
                 <path d="M42.8483 22.1514C42.9321 10.6372 33.6659 1.23518 22.1517 1.1514C10.6375 1.06762 1.23549 10.3338 1.1517 21.848C1.06792 33.3622 10.3341 42.7642 21.8483 42.848C33.3625 42.9318 42.7645 33.6656 42.8483 22.1514Z" stroke="black" stroke-width="0.75" stroke-linecap="round" />
                 <path d="M16.1829 38.0059C15.9225 39.2393 15.7449 40.4888 15.6513 41.746C15.6471 41.7842 15.6429 41.8225 15.6387 41.8608" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M21.9851 35.5439V35.9933" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
@@ -258,9 +266,9 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
 
           <div className='builder-top-nav'>
             <div className='nav-left-items'>
-              <button className="deafult-text clr-w"> ALL  ITEMS</button>
+              <button onClick={allitems} className={`deafult-text ${first?'clr-b':'clr-wh'}`}> ALL  ITEMS</button>
 
-              <button className='deafult-text clr-b'>MY ITEMS </button>
+              <button onClick={myitems} className={`deafult-text ${first?'clr-wh':'clr-b'}`}>MY ITEMS </button>
             </div>
             <div className='nav-right-items'>
 
@@ -271,30 +279,15 @@ function AvatarDashboard({ isOn, handleToggle, colorOne, colorTwo }) {
                 colorOne="#FF0000"
                 colorTwo="#06D6A0"
               />
-              <span className='deafult-text'>Rubies</span>
+              <span className='deafult-text'>Matic</span>
 
 
             </div>
           </div>
-
-
-<div className='avatar-box'>
-
-<div className='avatar-box-layout'>
-<img src={closedavatar} alt="" />
+          <div className='avatar-box'>
+{/* Below It's Conditional Compenents Where We Check If User Click On My items Then We will show my items comppnents */}
+ {first?<AvatarBoxAllItems/>:<Myitems/>}   
 </div>
-
-<div className='avatar-box-layout stalker-box'>
-  <span className='iron-icon'>
-    <img src={IronIcon} alt=""/>
-  </span>
-<div className='stalker-img'><img src={Stlavar} alt="" /></div>
-</div>
-
-
-</div>
-
-
           {/* <div>
   <p>loremnnsckjabcbscjsac c c cj j cj cscab </p>
   </div>  */}

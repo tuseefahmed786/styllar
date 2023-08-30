@@ -1,6 +1,7 @@
 .builder {
   position: relative;
   width: 70vw;
+  display: flex;
   height: 85vh;
   border-radius: 20px;
   background: #FFF;
@@ -23,7 +24,9 @@
   overflow-x: hidden;
   border-right: 1px solid whitesmoke;
 }
-
+.svg-css{
+  opacity: 40%;
+}
 .avatar-side-nav ul {
   padding: 9px;
 }
@@ -60,7 +63,7 @@
   stroke-width: 1px;
   stroke: #000;
   opacity: 0.1;
-  width: 70px;
+  width: 100%;
   margin: 0;
 }
 
@@ -72,34 +75,34 @@
 .nav-left-items button {
   width: 87.967px;
   height: 24px;
-  background-color: transparent;
   border-radius: 100px;
-  border: 1px solid #000;
-  opacity: 0.3;
 
 }
-
-.nav-left-items button:first-child {
+.clr-wh {
+  background: transparent;
+  opacity: 1;
+  color: #b3b3b3;
+  border: 1px solid #b3b3b3;
+}
+.clr-b {
   background: #389FFE;
   opacity: 1;
   border: none;
+  color: white;
 }
 
 .builder-top-nav {
   box-sizing: border-box;
   display: flex;
-  width: 92%;
+  width: 94%;
   justify-content: space-between;
   height: -moz-fit-content;
   height: fit-content;
   padding: 17px;
-  position: absolute;
   border-bottom: 1px solid whitesmoke;
-  top: 0;
-  padding: 16px 17px 17px 29px;
-  right: 0;
-}
+  padding: 16px 17px 17px 17px;
 
+}
 .nav-right-items {
   display: flex;
   justify-content: center;
@@ -162,22 +165,31 @@
   left: 89px;
   /* justify-content: start; */
 }
-
+.avatar-closed-layout{
+   display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 216px;
+    border-radius: 20px;
+    height: 216px;
+    border: 1px solid #000000;
+    position: relative;
+}
 .avatar-box-layout {
   display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 230px;
     border-radius: 20px;
-    height: 230px;
-    border: 1px solid rgba(0, 0, 0, 1);
     position: relative;
+   
 }
-
+.stalker-img{
+  width: 216px;
+  height: 216px;
+}
 .stalker-img img{
-width: 100%;
+  width: 100%;
 }
-
 .iron-icon{
 width: 26px;
 height: 26px;
@@ -203,7 +215,15 @@ transform: translate(-50%, -50%);
   display:none;
 }
 /* media query */
+@media screen and (max-width: 1260px) {
+  .builder {
+    width: 58vw!important;
+  }
 
+  .create-avatar{
+    width: 38vw!important;
+  }
+}
 @media screen and (max-width: 825px) {
   .layout-avatar{
       flex-direction: column;
@@ -238,7 +258,9 @@ display: none!important;
 .user-email p:first-child{
   display: block;
 }
-
+.create-avatar{
+  gap:30px;
+}
 .user-email p:last-child{
   display: none!important;
 }
@@ -248,16 +270,26 @@ display: none!important;
 }
 }
 @media screen and (max-width: 525px) {
+  .side-avatar {
 
+    width: 90%!important;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%,-50%)!important;
+}
+  .avatar-button button{
+    padding: 12px 25px 12px 25px!important;
+  }
   .builder{
     overflow-y:hidden;
-    height: fit-content!important;
+    height: 48vh!important;
+    flex-direction: column!important;
   }
 .avatar-side-nav {
   display: inline-flex;
   align-items: center;
   flex-direction: unset;
-  width: 500px;
+  width: 100%;
   overflow: scroll;
   height: auto;
   border-right: 1px solid whitesmoke;
@@ -279,6 +311,7 @@ width: 100%;
 .avatar-box {
   display: inline-flex;
   gap: 17px;
+  width: 100%;
   margin-left: 13px;
   position: static;
   margin-top: 12px;
@@ -296,8 +329,46 @@ width: 100%;
 
 
 }
+@media screen and (max-width: 422px) {
+.side-avatar-image{
+  width: 141px;
+}
+.side-avatar-image img{
+width: 100%;
+}
+}
+@media screen and (max-width: 354px) {
+  .side-avatar{
+    height: fit-content!important;
+    transform: translate(-50%,-24%)!important;
+  }
+  .side-avatar-buttons{
+    position: static!important;
+    padding: 25px 0px;
+  }
+  .side-avatar-images{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .side-avatar-image{
+    width: 72%;
+  }
 
+}
 @media screen and (max-width: 380px) {
+  .stalker-img{
+    width: 190px;
+    height: 190px;
+  }
+  .avatar-closed-layout{
+    min-width: 190px;
+  height: 190px;
+  }
+  .avatar-button button{
+    padding: 12px 15px 12px 15px!important;
+    font-size: 12px!important;
+  }
 .user-email ,.user-ellispe-icon{
   display: none!important;
 }
@@ -308,10 +379,6 @@ width: 100%;
     align-items: center;
 }
 
-.avatar-box-layout {
-  width: 180px;
-  height: 180px;
- 
-}
+
 
 }
