@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/styllar/static/css/main.bf44330b.css",
-    "main.js": "/styllar/static/js/main.ed6a94f6.js",
+    "main.css": "/styllar/static/css/main.f96a7115.css",
+    "main.js": "/styllar/static/js/main.ff28338a.js",
     "static/js/787.ea099fba.chunk.js": "/styllar/static/js/787.ea099fba.chunk.js",
     "static/media/ESAllianzBold.otf": "/styllar/static/media/ESAllianzBold.9ffaba12556c694cac0b.otf",
     "static/media/ESAllianzExtrabold.otf": "/styllar/static/media/ESAllianzExtrabold.adf43e3131e175d60ba1.otf",
@@ -12,20 +12,20 @@
     "static/media/ESAllianz.otf": "/styllar/static/media/ESAllianz.6527265befa95a51979a.otf",
     "static/media/ESAllianzItalic.otf": "/styllar/static/media/ESAllianzItalic.d3012f39abf8b2297782.otf",
     "static/media/Rectangle 656.png": "/styllar/static/media/Rectangle 656.1e36c356d80803d62913.png",
-    "static/media/Rectangle 655.png": "/styllar/static/media/Rectangle 655.1255256532b66adce748.png",
     "static/media/Rectangle 657.png": "/styllar/static/media/Rectangle 657.6401dd727238c5374b6f.png",
+    "static/media/Rectangle 655.png": "/styllar/static/media/Rectangle 655.c881c7f7fd7d48c962af.png",
     "static/media/Rectangle 654 (1).png": "/styllar/static/media/Rectangle 654 (1).b4a4b515d4b73f01224b.png",
     "static/media/Rectangle 656 (1).png": "/styllar/static/media/Rectangle 656 (1).a716b5c339852f60bbfd.png",
     "static/media/Rectangle 657 (1).png": "/styllar/static/media/Rectangle 657 (1).76de8f9076f007822b3b.png",
     "static/media/Styllar ItemsMAGIC-BALLS-736 cop.png": "/styllar/static/media/Styllar ItemsMAGIC-BALLS-736 cop.0565fd04be42e99e52f7.png",
     "static/media/Styllar ItemsMAGIC-BALLS-736 copy 1.png": "/styllar/static/media/Styllar ItemsMAGIC-BALLS-736 copy 1.8b02fa2f63d75154541d.png",
     "index.html": "/styllar/index.html",
-    "main.bf44330b.css.map": "/styllar/static/css/main.bf44330b.css.map",
-    "main.ed6a94f6.js.map": "/styllar/static/js/main.ed6a94f6.js.map",
+    "main.f96a7115.css.map": "/styllar/static/css/main.f96a7115.css.map",
+    "main.ff28338a.js.map": "/styllar/static/js/main.ff28338a.js.map",
     "787.ea099fba.chunk.js.map": "/styllar/static/js/787.ea099fba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf44330b.css",
-    "static/js/main.ed6a94f6.js"
+    "static/css/main.f96a7115.css",
+    "static/js/main.ff28338a.js"
   ]
 }
