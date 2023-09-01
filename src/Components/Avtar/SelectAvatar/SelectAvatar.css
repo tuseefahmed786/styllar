@@ -4,7 +4,7 @@
   background: #fff;
   width: 26vw;
   overflow: scroll;
-  height: 85vh;
+  height: 87vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +14,7 @@
 .avatarpic-section {
   background-color: whitesmoke;
   width: 82%;
-  margin-top: 19px;
+  margin-top: 40px;
   border-radius: 13px;
 }
 
@@ -116,19 +116,31 @@
 
 .icon-22x {
   position: absolute;
-    top: 15px;
-    color: white;
-    left: 9px;
-    border-radius: 29px;
-    width: 45px;
-    display: flex;
-    height: 28px;
-    font-size: 14px;
-    background: #b4b4b4;
-    justify-content: center;
-    align-items: center;
+  top: 15px;
+  color: white;
+  left: 9px;
+  border-radius: 29px;
+  width: 45px;
+  display: flex;
+  height: 28px;
+  font-size: 14px;
+  background: #b4b4b4;
+  justify-content: center;
+  align-items: center;
 }
 
-.blue22x{
-  background: #389ffe!important; 
+.blue22x {
+  background: #389ffe !important;
+}
+
+
+.img-r{
+  border: 1px solid transparent;
+}
+.img-r:hover{
+cursor: pointer;
+}
+.slect-img {
+  border: 1px solid black;
+  border-radius: 24px;
 }

@@ -2,7 +2,7 @@
   position: relative;
   width: 70vw;
   display: flex;
-  height: 85vh;
+  height: 87vh;
   border-radius: 20px;
   background: #FFF;
   overflow: scroll;
@@ -10,7 +10,7 @@
 
 .layout-avatar {
 
-  padding: 20px 20px;
+  padding: 45px 15px;
   display: flex;
   gap: 20px;
 }
@@ -24,11 +24,23 @@
   overflow-x: hidden;
   border-right: 1px solid whitesmoke;
 }
+.svg-select:hover{
+cursor: pointer;
+}
+.svg-css:hover{
+  opacity: 1;
+  cursor: pointer;
+}
 .svg-css{
-  opacity: 40%;
+  border-color:blue ;
+  opacity:1!important;
 }
 .avatar-side-nav ul {
   padding: 9px;
+  width: 100%;
+    padding: 9px;
+    box-sizing: border-box;
+    border-left: 2px solid transparent;
 }
 
 .avatar-side-nav ul:first-child {
@@ -90,7 +102,12 @@
   border: none;
   color: white;
 }
-
+.avatar-side-nav ul li svg{
+opacity: 40%;
+}
+.bside-css{
+  border-left: 2px solid #389FFE;
+}
 .builder-top-nav {
   box-sizing: border-box;
   display: flex;
@@ -165,6 +182,9 @@
   left: 89px;
   /* justify-content: start; */
 }
+.avatar-side-nav ul li svg{
+  opacity: 40%;
+  }
 .avatar-closed-layout{
    display: inline-flex;
     justify-content: center;
@@ -281,8 +301,9 @@ display: none!important;
     padding: 12px 25px 12px 25px!important;
   }
   .builder{
-    overflow-y:hidden;
-    height: 48vh!important;
+    overflow:hidden!important;
+    height: fit-content!important;
+    padding-bottom: 10px;
     flex-direction: column!important;
   }
 .avatar-side-nav {
@@ -316,6 +337,8 @@ width: 100%;
   position: static;
   margin-top: 12px;
   flex-wrap: nowrap;
+  overflow: scroll!important;
+  padding-bottom: 9px;
 }
 
 .avatar-side-nav::-webkit-scrollbar {
